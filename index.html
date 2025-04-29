@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ved Kumar Singh Portfolio</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({ publicKey: "fm1KVVNi-7xPl540s" });
+        })();
+    </script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <a href="#" class="logo">Ved</a>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="bx bx-moon" id="darkMode-icon"></div>
+    <div class="bx bx-menu" id="menu-icon"></div>
+</header>
+
+<!-- Home Section -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1>Ved Kumar Singh</h1>
+        <p>
+            I'm a Computer Science student specializing in Full Stack Development, passionate about crafting efficient web and data solutions. 
+            Skilled in HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Java, C++, and R programming.
+        </p>
+
+        <div class="social-media">
+            <a href="https://github.com/ved5541"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/vedsingh11114/"><i class='bx bxl-linkedin'></i></a>
+        </div>
+
+        <a href="https://github.com/ved5541" class="btn">View GitHub</a>
+    </div>
+
+    <div class="profession-container">
+        <div class="profession-box">
+            <div class="profession" style="--i:0;">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Developer</h3>
+            </div>
+            <div class="profession" style="--i:1;">
+                <i class='bx bx-bar-chart'></i>
+                <h3>Data Analyst</h3>
+            </div>
+            <div class="profession" style="--i:2;">
+                <i class='bx bx-line-chart'></i>
+                <h3>Data Science Enthusiast</h3>
+            </div>
+            <div class="circle"></div>
+        </div>
+
+        <div class="overlay"></div>
+    </div>
+
+    <div class="home-img">
+        <img src="images/pff.png" alt="Ved Profile Picture">
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/pff2.jpg" alt="Profile Pic">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>
+            I'm currently pursuing Computer Science and Engineering at Lovely Professional University.
+            I specialize in building web applications, handling data, and creating scalable solutions using modern technologies like Spring Boot, MongoDB, Java, and R programming.
+            My goal is to apply technology creatively to solve real-world problems.
+        </p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="images/proj11.jpg" alt="proj1">
+
+            <div class="portfolio-layer">
+                <h4>Data Processing and Visualization</h4>
+                <p>Built an R-based system to analyze hospital management data, creating interactive charts and reports using ggplot2, dplyr, and tidyverse. </p>
+                <a href="https://github.com/ved5541"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/proj22.jpg" alt="pro">
+
+            <div class="portfolio-layer">
+                <h4>Password Generator</h4>
+                <p>Developed a secure password generator in Java Swing with advanced encryption algorithms.</p>
+                <a href="https://github.com/ved5541"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/proj33.jpg" alt="pro">
+
+            <div class="portfolio-layer">
+                <h4>Employee Management System</h4>
+                <p>Designed a full-stack web app for employee record management using Spring Boot, JPA, and Bootstrap.</p>
+                <a href="https://github.com/ved5541"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certificates Section -->
+<section class="certificates" id="certificates">
+    <h2 class="heading">My <span>Certificates</span></h2>
+    <ul>
+        <li><strong>Machine Learning Specialization</strong> - Coursera (Aug 2024 - Nov 2024)</li>
+        <li><strong>DSA with C++</strong> - Cipher School (June 2024 - July 2024)</li>
+        <li><strong>Excel Skills for Business Specialization</strong> - Coursera (Jan 2024 - May 2024)</li>
+    </ul>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form action="#">
+        <div class="input-box">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="number" id="mobile" placeholder="Mobile Number">
+            <input type="text" id="subject" placeholder="Email Subject">
+        </div>
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" onclick="sendMail()" class="btn">
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Created by Ved Kumar Singh.</p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+
+<!-- Scroll Reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+
